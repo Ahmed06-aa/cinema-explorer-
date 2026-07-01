@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMA EXPLORER
+
+    </title>
+    <link rel="stylesheet" href="page_principale.css">
+    <script src="designe.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+</head>
+<body>
+    
+    <header>
+        <div id="header-top">
+            <button id="menu" onclick="togglemenu()" >MENU</button>
+            <div class="logo-box">
+              <h1 id="titre-principale">CINEMA EXPLORER</h1>
+            </div>
+            <button id="login" onclick="openform()"> LOGIN / SIGNUP </button> 
+       </div>
+    </header>
+
+                                               <!--AFFICHAGE DU CONTENUE FORMULAIRE-->
+
+    <form action="formulaire" >
+        <fieldset class="signForm " id="signForm">
+           
+            <button type="submit" id="buttonX-form"onclick= "closeform()"> X </button>
+            <h1 id="form-title">CINEMA EXPLORER</h1>
+            
+            <div class="form-group">
+            <p class="case-form"> <label for="nom">First name</label></p>
+            <input type="text" name="nom" id="nom" placeholder="First Name">
+            </div>
+
+            <div class="form-group">
+            <p class="case-form"><label for="nom">Last name</label></p>
+            <input type="text" name="nom" id="nom" placeholder="Last Name ">
+            </div>
+
+            <div class="form-group">
+            <p class="case-form"><label for="mail">Email</label></p>
+            <input type="email" name="mail" id="mail" placeholder="Your e-mail" required>
+            </div>
+
+            <div class="form-group">
+            <p class="case-form"><label for="password">Password</label></p>
+            <input type="password" name="password" id="password" placeholder="your password" required>
+            </div>
+            <p><button type="submit" id="button-form">Submit</button></p>
+            
+        </fieldset>
+    </form>
+
+                                               <!--AFFICHAGE DU CONTENUE MNEU-->
+
+
+    
+ <div class="menu-form" id="menuForm">
+    <div class="menu-choix" id="choix-movies">
+        <ul>
+        <li class="menu-minititle"><i class="fa-solid fa-film"></i> MOVIES </li>
+        <ul class="menu-secondchoix">
+            <li><a href="best50.html">BEST 50 MOVIES </a></li>
+            <li><a href="2000_today.html">BEST movie per year, 2000-today</a></li>
+            <li><a href="directors.html">BEST DIRECTORS</a></li>
+        </ul>
+        </ul>
+   </div>
+   <div class="menu-choix" id="choix-tvshow">
+       <li class="menu-minititle"> <i class="fa-solid fa-tv"></i> TV-SHOWS </li>
+            <ul class="menu-secondchoix">
+            <li><a href="best50.html#tvShows">BEST 50 TV-SHOWS</a></li>
+            <li><a href="2000_today.html#TVshows">BEST TV-SHOW per year, 2000-today</a></li>
+            <li><a href="directors.html#tv">BEST DIRECTORS</a></li>
+        </ul>
+    </div>
+    <div class="menu-choix" id="choix-awards">
+        <li class="menu-minititle"> <i class="fa-solid fa-trophy"></i> AWARDS </li>
+        <ul class="menu-secondchoix">
+            <li><a href="best_actors.html">BEST ACTOR/ACTRESS </a></li>
+            <li><a href="animation.html">BEST ANIMATED MOVIE</a></li>
+        </ul>
+        
+    </div>
+ </div>
+
+                                               <!--Page principale Most popular celebrities -->
+
+ <div class="most-populaire" >
+    <h2>Most popular celebrities</h2>
+
+    <div class="carousel-wrapper">
+  <button class="carousel-btn prev" onclick="scrollCarousel(-1)">‹</button>
+  <div class="celebrities-grid" id="celebGrid">
+
+    <div class="celebrity-card"> 
+        <img src="photos_celebrities/tom hollande.jpg" alt="Tom Hollande">
+        <a  class="nom_photo" href="https://www.imdb.com/name/nm4043618/?ref_=nv_sr_srsg_0_tt_1_nm_7_in_0_q_tom%20holl">Tom Hollande</a> >
+    </div>
+    <div class="celebrity-card"> 
+        <img src="photos_celebrities/jake.webp" alt="Jake">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm0350453/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_jake">Jake Gyllenhaal</a> 
+    </div>
+    <div class="celebrity-card">  
+        <img src="photos_celebrities/Zendaya.avif" alt="Zendaya">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm3918035/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_zendaya">Zendaya</a> 
+    </div>
+    <div class="celebrity-card">  
+        <img src="photos_celebrities/michaelBJordan.jpg" alt="Michael B Jordan">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm0430107/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_b%20jor">Michael B. Jordan</a> 
+    </div>
+    <div class="celebrity-card">  
+        <img src="photos_celebrities/keanu reeves.webp" alt="Keanu Reeved">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm0000206/?ref_=nv_sr_srsg_0_tt_1_nm_7_in_0_q_reeves">Keanu Reeves</a> 
+    </div>
+    <div class="celebrity-card">
+        <img src="photos_celebrities/scarlette.jpg" alt="Scarlette">
+      <a class="nom_photo" href="https://www.imdb.com/name/nm0424060/?ref_=nv_sr_srsg_7_tt_2_nm_6_in_0_q_scarlette">Scarlett Johansson</a>  
+    </div>
+    <div class="celebrity-card">
+        <img src="photos_celebrities/timothee chalamet.jpg" alt="Timothee Chalamet">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm3154303/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_chala">Timothée Chalamet</a> 
+    </div>
+    <div class="celebrity-card">
+        <img src="photos_celebrities/anne hathaway.webp" alt="Anne Hathaway">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm0004266/?ref_=fn_t_1">Anne Hathaway</a> 
+    </div>
+    <div class="celebrity-card">  
+        <img src="photos_celebrities/joaquin.webp" alt="Joaquin">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm0001618/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_joakin%20phoeni">Joaquin Phoenix</a> 
+    </div>
+    <div class="celebrity-card">
+        <img src="photos_celebrities/al pacino.webp" alt="Al pacino">
+        <a class="nom_photo" href="https://www.imdb.com/name/nm0000199/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_al%20pacino">Al Pacino</a> 
+    </div>
+   </div>
+  <button class="carousel-btn next" onclick="scrollCarousel(1)">›</button>
+</div>
+ </div>
+
+                                               <!--Page principale of the 2020's -->
+
+    <div class="movies">
+        <h2>Top 10 Films of the 2020's</h2>
+        <div class="movies-grid">
+        <div class="deuxfilms">
+            <div class="film">
+                <img src="photos_movies/project hail mary.jpg" alt="Project hail mary">
+                <p>    
+                        <br>&nbsp;A science teacher wakes up alone on a spaceship. As his &nbsp;memory returns, he uncovers a mission to stop a mysterious  &nbsp;substance killing Earth's sun <br>&nbsp;and that an unexpected friendship may be the key.
+                    <br><br>&nbsp;Directors :&nbsp;<a href="https://www.imdb.com/name/nm0520488/">Phil Lord</a>&nbsp;&nbsp; <a href="https://www.imdb.com/name/nm0588087/">Christopher Miller</a> <br>
+                    &nbsp;writers :&nbsp;<a href="https://www.imdb.com/name/nm1206844/">Drew Goddard</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm1083982/">Andy Weir</a> <br>
+                    &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm0331516/">Ryan Gosling</a>&nbsp;&nbsp; <a href="https://www.imdb.com/fr/name/nm1197689/">Sandra Hüller</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm4013922/">James Ortiz</a>
+                    &nbsp;<a class="trailer" href="https://www.imdb.com/fr/video/vi115002137/?ref_=vp_nv_sr_srsg_2_tt_5_nm_3_in_0_q_pro">&nbsp;Trailer</a>
+                </p>
+            </div>
+            <div class="film">
+                <img src="photos_movies/no way home.jpg" alt="no way home">
+                <p>
+                       <br>&nbsp;With Spider-Man's identity now revealed, Peter asks Doctor &nbsp;Strange for help. When a spell goes wrong, dangerous foes from &nbsp;other worlds start to appear.
+                   <br><br>&nbsp;Director :&nbsp;<a href="https://www.imdb.com/name/nm1218281/?ref_=fn_t_1">Jon Watts</a><br>
+                   &nbsp;Writers :&nbsp;<a href="https://www.imdb.com/name/nm0571343/?ref_=nv_sr_srsg_1_tt_0_nm_8_in_0_q_chris%20mcke">Chris McKenna</a>&nbsp; &nbsp;<a href="https://www.imdb.com/name/nm1273099/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_sommers%20erik">Erik Sommers</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0498278/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_stan%20lee">Stan Lee</a><br>
+                   &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm4043618/?ref_=nv_sr_srsg_0_tt_1_nm_7_in_0_q_tom%20holl">Tom Holland</a>&nbsp; &nbsp; <a href="https://www.imdb.com/name/nm3918035/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_zendaya">Zendaya</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm1212722/?ref_=nv_sr_srsg_0_tt_1_nm_7_in_0_q_bemedict">Benedict Cumberbatch</a>
+                   &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi3348546073/?playlistId=tt10872600&ref_=tt_ov_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>
+        </div>
+        <div class="deuxfilms">
+            <div class="film">
+                <img id="openhaimer" src="photos_movies/openhaimer.jpg" alt="openahaimer">
+                <p>
+                        <br>&nbsp;A dramatization of the life story of J. Robert Oppenheimer, &nbsp;the physicist who had a large hand in the development of the &nbsp;atomic bombs that brought an end to World War II.
+                    <br><br>&nbsp;Director :&nbsp;<a href="https://www.imdb.com/name/nm0634240/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_nolan">Christopher Nolan</a><br>
+                    &nbsp;Writers :&nbsp; <a href="https://www.imdb.com/name/nm0634240/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_nolan">Christopher Nolan</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm3284831/?ref_=nv_sr_srsg_0_tt_1_nm_7_in_0_q_bird%20kai">Kai Bird</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm2452558/?ref_=nv_sr_srsg_0_tt_1_nm_7_in_0_q_sherwin%20martin">Martin Sherwin</a><br>
+                    &nbsp;Stars :&nbsp; <a href="https://www.imdb.com/name/nm0614165/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_murphy">Cillian Murphy</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm1289434/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_emily%20blunt">Emily Blunt</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0000354/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_damon%20matt">Matt Damon</a>
+                    &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi2053751833/?playlistId=tt15398776&ref_=tt_ov_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>
+            <div class="film">
+                <img src="photos_movies/dune1.jpg" alt="DUNE 1">
+                <p>
+                        <br>&nbsp;Paul Atreides arrives on Arrakis after his father accepts the &nbsp;stewardship of the dangerous planet. However, chaos ensues &nbsp;after a betrayal as forces clash to control melange, a precious &nbsp;resource.
+                    <br><br>&nbsp;Director :&nbsp;<a href="https://www.imdb.com/name/nm0898288/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_dennis%20ville">Denis Villeneuve</a><br>
+                    &nbsp;Writers :&nbsp;<a href="https://www.imdb.com/name/nm3123612/?ref_=nv_sr_srsg_4_tt_5_nm_3_in_0_q_spaiths">Jon Spaihts</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0898288/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_dennis%20ville">Denis Villeneuve</a>&nbsp;&nbsp;<a href="">Eric Roth</a><br>
+                    &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm3154303/?ref_=nv_sr_srsg_0_tt_0_nm_8_in_0_q_timoth">Timothée Chalamet</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0272581/?ref_=nv_sr_srsg_5_tt_0_nm_8_in_0_q_fergusen">Rebecca Ferguson</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm3918035/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_zendaya">Zendaya</a>
+                    &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi3986080537/?playlistId=tt1160419&ref_=tt_ov_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>
+        </div>
+        <div class="deuxfilms">
+            <div class="film">
+                <img src="photos_movies/top gun.jpg" alt="Top Gun">
+                <p>
+                    <br>&nbsp;The story involves Maverick confronting his past while training a &nbsp;group of younger Top Gun graduates, including the son of his &nbsp;deceased best friend, for a dangerous mission.
+                    <br><br>&nbsp;Director :&nbsp;<a href="">Joseph Kosinski</a><br>
+                    &nbsp;Writers :&nbsp;<a href="">Ehren Kruger</a>&nbsp;&nbsp;<a href="">Eric Warren Singer</a>&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Christopher McQuarrie</a><br>
+                    &nbsp;Stars :&nbsp;<a href="">Tom Cruise</a>&nbsp;&nbsp;<a href="">Jennifer Connelly</a>&nbsp;&nbsp;<a href="">Miles Teller</a>
+                    &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi632472089/?playlistId=tt1745960&ref_=tt_ov_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>
+            <div class="film">
+                <img src="photos_movies/across the spider verse.jpg" alt="Spider man across the spider verse">
+                <p>
+                    <br>&nbsp;Traveling across the multiverse, Miles Morales meets a new &nbsp;team of Spider-People, made up of heroes from different &nbsp;dimensions. But when the heroes clash over how to deal with a &nbsp;new threat, Miles finds himself at a crossroads.
+                    <br><br>&nbsp;Directors :&nbsp;<a href="https://www.imdb.com/name/nm1690966/?ref_=tt_ov_1_1">Joaquim Dos Santos</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm5358492/?ref_=tt_ov_1_2">Kemp Powers</a>&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm1042511/?ref_=tt_ov_1_3">Justin K. Thompson</a><br>
+                    &nbsp;Writers :&nbsp;<a href="https://www.imdb.com/name/nm0520488/?ref_=tt_ov_2_1">Phil Lord</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0588087/?ref_=tt_ov_2_2">Christopher Miller</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm1709264/?ref_=tt_ov_2_3">Dave Callaham</a><br>
+                    &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm4271336/?ref_=tt_ov_3_1">Shameik Moore</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm2794962/?ref_=tt_ov_3_2">Hailee Steinfeld</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm3109964/?ref_=tt_ov_3_3">Brian Tyree Henry</a>
+                      &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi207143961/?playlistId=tt9362722&ref_=tt_ov_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>
+        </div>
+        <div class="deuxfilms">
+            <div class="film">
+                <img src="photos_movies/guardians of the galaxy.jpg" alt="guardiand of the galaxy">
+                <p>
+                    <br>&nbsp;Still reeling from the loss of Gamora, Peter Quill rallies his &nbsp;team to defend the universe and one of their own - a mission &nbsp;that could mean the end of the Guardians if not successful.
+                    <br><br>&nbsp;Director :&nbsp;<a href="https://www.imdb.com/name/nm0348181/?ref_=tt_ov_1_1">James Gunn</a> <br>
+                    &nbsp;Writers :&nbsp;<a href="https://www.imdb.com/name/nm0348181/?ref_=tt_ov_1_1">James Gunn</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm4160687/?ref_=tt_ov_2_2">Jim Starlin</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0498278/?ref_=tt_ov_2_3">Stan Lee</a> <br>
+                    &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm0695435/?ref_=tt_ov_3_1">Chris Pratt</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm1030244/?ref_=tt_ov_3_2">Chukwudi Iwuji</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0177896/?ref_=tt_ov_3_3">Bradley Cooper</a>
+                    &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi2046936089/?playlistId=tt6791350&ref_=tt_ov_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>    
+            <div class="film">
+                <img src="photos_movies/prisonners.jpg" alt="Prisonners">
+                <p>
+                    <br>&nbsp;A desperate father takes the law into his own hands after police &nbsp;fail to find two kidnapped girls.
+                    <br><br>&nbsp;Director :&nbsp;<a href="">Denis Villeneuve</a><br>
+                    &nbsp;Writer :&nbsp;<a href="">Aaron Guzikowski</a><br>
+                    &nbsp;Stars :&nbsp;<a href="">Hugh Jackman</a>&nbsp;&nbsp;<a href="">Jake Gyllenhaa</a>&nbsp;&nbsp;<a href="">lViola Davis</a>
+                    &nbsp; <a class="trailer" href="https://www.imdb.com/video/vi3294275865/?playlistId=tt1392214&ref_=tt_ov_pr_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>  
+        </div>
+        <div class="deuxfilms">
+            <div class="film">
+                <img src="photos_movies/spirited away.jpg" alt="spirited away">
+                <p>
+                    <br>&nbsp;During her family's move to the suburbs, a sullen 10-year-old girl &nbsp;wanders into a world ruled by gods, witches and spirits, and &nbsp;where humans are changed into beasts.
+                    <br><br>&nbsp;Director :&nbsp;<a href="https://www.imdb.com/name/nm0594503/?ref_=tt_ov_1_1">Hayao Miyazaki</a><br>
+                    &nbsp;Writer :&nbsp;<a href="https://www.imdb.com/name/nm0594503/?ref_=tt_ov_1_1">Hayao Miyazaki</a><br>
+                    &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm0997115/?ref_=tt_ov_3_1">Miyu Irino</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0383708/?ref_=tt_ov_3_2">Rumi Hiiragi</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0622412/?ref_=tt_ov_3_3">Mari Natsuki</a>
+                    &nbsp;<a class="trailer" href="https://www.imdb.com/video/vi3294275865/?playlistId=tt1392214&ref_=tt_ov_pr_ov_vi">&nbsp;Trailer</a>
+                </p>
+            </div>
+            <div class="film">
+                <img src="photos_movies/greeen book.jpg" alt="">
+                <p>
+                    <br>&nbsp;A working-class Italian-American bouncer becomes the driver for an African-American classical pianist on a tour of venues through the 1960s American South.
+                    <br><br>&nbsp;Directors :&nbsp;<a href="https://www.imdb.com/name/nm0268380/?ref_=tt_ov_1_1">Peter Farrelly</a><br>
+                    &nbsp;Wirter :&nbsp;<a href="https://www.imdb.com/name/nm0885014/?ref_=tt_ov_2_1">Nick Vallelonga</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0192942/?ref_=tt_ov_2_2">Brian Hayes Currie</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0268380/?ref_=tt_ov_2_3">Peter Farrelly</a><br>
+                    &nbsp;Stars :&nbsp;<a href="https://www.imdb.com/name/nm0001557/?ref_=tt_ov_3_1">Peter Farrelly</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0991810/?ref_=tt_ov_3_2">Mahershala Ali</a>&nbsp;&nbsp;<a href="https://www.imdb.com/name/nm0004802/?ref_=tt_ov_3_3">Linda Cardellini</a>
+                    &nbsp;<a href="https://www.imdb.com/video/vi824752921/?playlistId=tt6966692&ref_=tt_ov_ov_vi" class="trailer">Trailer</a>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>            
+</body>
+</html>
